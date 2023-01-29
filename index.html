@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Silkscreen&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Snap</title>
+</head>
+<body>
+    <nav class="navflx">
+        <div class="logoDiv">
+            <img src="assets/logo.svg" alt="snapLogo">
+        </div> 
+        <div class="liste">
+            <ol class="olflx">
+                <li>
+                    <a href="#" onclick="menu1ac()" >Features <img id="men1k" src="assets/icon-arrow-down.svg"> <img id="men1a" src="assets/icon-arrow-up.svg"></a>
+                    <div id="altmenu">
+                        <ol>
+                            <li>
+                                <img src="assets/icon-todo.svg">
+                                <span>Todo List</span>
+                            </li>
+                            <li>
+                                <img src="assets/icon-calendar.svg">
+                                <span>Calendar</span>
+                            </li>
+                            <li>
+                                <img src="assets/icon-reminders.svg">
+                                <span>Reminders</span>
+                            </li>
+                            <li>
+                                <img src="assets/icon-planning.svg">
+                                <span>Planning</span>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="menu2ac()">Company <img id="men2k" src="assets/icon-arrow-down.svg"> <img id="men2a" src="assets/icon-arrow-up.svg"></a>
+                    <div id="altmenu2">
+                        <ol>
+                            <li>
+                                <span>History</span>
+                            </li>
+                            <li>
+                                <span>Our Team</span>
+                            </li>
+                            <li>
+                                <span>Blog</span>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+            </ol>
+        </div>
+        <div class="flxend">
+            <a href="#">Login</a>
+            <button id="regbut">Register</button>
+        </div>
+    </nav>
+    <div class="bigflx">
+        <div class="ldiv">
+            <h2>Make <br> remote work</h2>
+            <p class="grip"> Get your team in sync, no matter your location. <br> Streamline processes, create team rituals, and <br> watch productivity soar.</p>
+            <button>Learn More</button>
+            <div class="imflx">
+                <img src="assets/client-databiz.svg" >
+                <img src="assets/client-audiophile.svg" >
+                <img src="assets/client-meet.svg" >
+                <img src="assets/client-maker.svg" >
+            </div>
+        </div>
+        <div class="rdiv">
+            <img class="imdest" src="assets/image-hero-desktop.png" alt="image-hero-desktop">
+            <img class="immob" src="assets/image-hero-mobile.png" alt="image-hero-mobile">
+        </div>
+    </div>
+    <button id="menubut" onclick="yanmenuac()">
+        <img id="ic-menu" src="assets/icon-menu.svg">
+        <img id="ic-close-menu" src="assets/icon-close-menu.svg">
+    </button>
+    <nav id="yanav">
+        <div class="menpad">
+            <ol class="listflx">
+                <li>
+                    <a href="#">Features</a>
+                    <ol>
+                        <li> <img src="assets/icon-todo.svg"> <span>Todo List</span></li>
+                        <li> <img src="assets/icon-calendar.svg"> <span>Calendar</span></li>
+                        <li> <img src="assets/icon-reminders.svg"> <span>Reminders</span></li>
+                        <li> <img src="assets/icon-planning.svg"> <span>Planning</span></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">Company</a>
+                    <ol>
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                    </ol>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+            </ol>
+            <div class="flxend2">
+                <button class="logbut" href="#">Login</button>
+                <button id="regbut">Register</button>
+            </div>
+        </div>
+    </nav>
+    <div id="kara"></div>
+    <script src="script.js"></script>
+</body>
+</html>

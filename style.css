@@ -1,0 +1,735 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol,
+ul {
+list-style: none;
+}
+blockquote,
+q {
+quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* reset css */
+
+body{
+    padding: 0 5%;
+    background-color: rgb(248, 248, 248);
+}
+
+a{
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 50ms ease-in-out;
+}
+
+a:hover{
+    color: #444;
+}
+
+.navflx{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    align-items: center;
+}
+
+.logoDiv{
+    width: 10%;
+}
+
+.liste{
+    width: 35%;
+}
+
+.olflx{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.flxend{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+    align-items: center;
+}
+
+.bigflx{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 100px;
+    justify-content: flex-end;
+}
+
+#regbut{
+    color: #444;
+    border: 1px solid #333;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 16px;
+    margin-right: 8px;
+    transition: all 200ms ease-in-out;
+}
+
+#regbut:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.imdest{
+    margin-top: 40px;
+    width: 58%;
+    height: auto;
+}
+
+.rdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.ldiv{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    align-items: left;
+    gap: 44px;
+    height: 75vh;
+}
+
+.ldiv button{
+    width: 180px;
+    border-radius: 24px;
+    padding: 18px 20px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.37);
+    font-size: 22px;
+    transition: all 200ms ease-in-out;
+}
+
+.ldiv button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+.grip{
+    color: #555;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 112px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Silkscreen', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.imflx{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+    padding-top: 44px;
+}
+
+.imflx img{
+    height: 34px;
+}
+
+#altmenu{
+    position: absolute;
+    background: white;
+    /*border: 1px solid rgb(221, 221, 221);*/
+    padding: 0 18px; /* 8 18*/
+    margin-top: 6px;
+    margin-left: -68px;
+    width: 120px;
+    border-radius: 18px;
+    /*box-shadow: 2px 2px 2px 2px rgba(221, 221, 221, 0.37);*/
+    z-index: 1000;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 240ms ease-in-out;
+}
+
+#altmenu.ac{
+    max-height: 600px;
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: 2px 2px 2px 2px rgba(221, 221, 221, 0.37);
+    
+}
+
+#altmenu ol li{
+    margin: 14px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+#men1k{
+    display: inline;
+}
+
+#men1k.acildi{
+    display: none;
+}
+
+#men1a{
+    display: none;
+}
+
+#men1a.acildi{
+    display: inline;
+}
+
+#altmenu2{
+    position: absolute;
+    background: white;
+    /* border: 1px solid rgb(221, 221, 221); */
+    padding: 0 18px; /* 8 18*/
+    margin-top: 6px;
+    margin-left: -8px;
+    width: 80px;
+    border-radius: 18px;
+    /* box-shadow: 2px 2px 2px 2px rgba(221, 221, 221, 0.37); */
+    z-index: 1000;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 220ms ease-in-out;
+}
+
+#altmenu2.ac{
+    max-height: 600px;
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: 2px 2px 2px 2px rgba(221, 221, 221, 0.37);
+}
+
+#altmenu2 ol li{
+    margin: 14px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+#men2k{
+    display: inline;
+}
+
+#men2k.acildi{
+    display: none;
+}
+
+#men2a{
+    display: none;
+}
+
+#men2a.acildi{
+    display: inline;
+}
+
+.immob{
+    display: none;
+}
+
+#menubut{
+    display: none;
+}
+
+#yanav{
+    display: none;
+}
+
+@media only screen and (max-width: 1500px) {
+    .imdest{
+        margin-top: 40px;
+        width: 80%;
+        height: auto;
+    }    
+    .liste{
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .imdest{
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+    }
+    .liste{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #kara{
+        display: none;
+    }
+
+    #kara.karart{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        opacity: 80%;
+        background-color: #111;
+        z-index: 100;
+    }
+
+    #menubut{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        border: none;
+        background-color: transparent;
+        transition: all 200ms ease-in-out;
+        z-index: 1000;
+    }
+    
+    #ic-close-menu{
+        display: none;
+    }
+    
+    #ic-close-menu.acil{
+        display: block;
+    }
+    
+    #ic-menu{
+        display: block;
+    }
+    
+    #ic-menu.acil{
+        display: none;
+    }
+
+    #yanav{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0px;
+        height: 100%;
+        background-color: rgb(245, 245, 245);
+        z-index: 999;
+        transition: all 200ms ease-in-out;
+        overflow: hidden;
+    }
+
+    #yanav.ac{
+        width: 340px;
+    }
+
+    .menpad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .listflx{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+    }
+
+    .listflx li ol li{
+        font-size: 18px;
+        font-weight: 400;
+        color: #555;
+        margin: 10px 0;
+    }
+
+    .bigflx{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 100px;
+        justify-content: center;
+        align-items: center;
+    } 
+    .liste{
+        display: none;
+    }
+    .flxend{
+        display: none;
+    }
+    .imdest{
+        display: none;
+    }
+    .immob{
+        display: block;
+        height: 40%;
+        width: auto;
+    }
+    .rdiv{
+        display: block;
+        height: 50%;
+    }
+    .imflx{
+        padding-top: 10px;
+    }
+    .logoDiv img{
+        width: 150px;
+    }
+    .navflx{
+        position: absolute;
+    } 
+
+    .flxend2{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .logbut{
+        color: #444;
+        border: 1px solid #333;
+        border-radius: 15px;
+        background-color: white;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 8px 16px;
+        margin-right: 8px;
+        transition: all 200ms ease-in-out;
+    }
+
+    .logbut:hover{
+        color: white;
+        background-color: black;
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .logoDiv img{
+        width: 120px;
+        margin-left: 25px;
+    }
+
+    .imdest{
+        display: none;
+    }
+
+    .immob{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+    .ldiv{
+        padding-top: 20px;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+    
+    .ldiv button{
+        padding: 12px 16px;
+    }
+
+    h2{
+        margin-top: 26px;
+        font-size: 75px;
+    }
+
+    .imflx{
+        gap: 20px;
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+    
+    .imflx img{
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+
+    .immob{
+        display: block;
+        width: 85%;
+        margin: auto;
+    }
+
+    .ldiv{
+        padding-top: 20px;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+    
+    .ldiv button{
+        padding: 12px 14px;
+    }
+
+    h2{
+        margin-top: 18px;
+        font-size: 65px;
+    }
+
+    .imflx{
+        gap: 18px;
+        padding-bottom: 30px;
+        padding-top: 15px;
+    }
+    
+    .imflx img{
+        height: 26px;
+    }
+
+    #yanav.ac{
+        width: 202px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .logoDiv img{
+        margin-left: 10px;
+    }
+
+    .immob{
+        display: block;
+        width: 85%;
+        margin: auto;
+    }
+
+    .ldiv{
+        padding-top: 20px;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+    
+    .ldiv button{
+        padding: 12px 14px;
+    }
+
+    h2{
+        margin-top: 16px;
+        font-size: 64px;
+    }
+
+    .imflx{
+        gap: 12px;
+        padding-bottom: 5px;
+        padding-top: 15px;
+    }
+    
+    .imflx img{
+        height: 24px;
+    }
+
+    .grip{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+
+    .logoDiv img{
+        width: 100px;
+    }
+
+    .immob{
+        display: block;
+        width: 85%;
+        margin: auto;
+    }
+
+    .ldiv{
+        padding-top: 20px;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+    
+    .ldiv button{
+        padding: 12px 14px;
+    }
+
+    h2{
+        margin-top: 16px;
+        font-size: 56px;
+    }
+
+    .imflx{
+        gap: 10px;
+        padding-bottom: 5px;
+        padding-top: 15px;
+    }
+    
+    .imflx img{
+        height: 22px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .logoDiv img{
+        width: 80px;
+        margin-left: 5px;
+    }
+    
+    .imflx img{
+        height: 18px;
+    }
+
+    h2{
+        margin-top: 12px;
+        font-size: 46px;
+    }
+
+    .grip{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
