@@ -79,13 +79,14 @@ time,
 mark,
 audio,
 video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 article,
 aside,
 details,
@@ -97,38 +98,44 @@ hgroup,
 menu,
 nav,
 section {
-display: block;
+    display: block;
 }
+
 body {
-line-height: 1;
+    line-height: 1;
 }
+
 ol,
 ul {
-list-style: none;
+    list-style: none;
 }
+
 blockquote,
 q {
-quotes: none;
+    quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-content: '';
-content: none;
+    content: '';
+    content: none;
 }
+
 table {
-border-collapse: collapse;
-border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /* reset css */
 
-body{
+body {
     padding: 0 5%;
     background-color: rgb(248, 248, 248);
 }
 
-a{
+a {
     text-decoration: none;
     color: #666;
     font-weight: 500;
@@ -136,11 +143,11 @@ a{
     transition: all 50ms ease-in-out;
 }
 
-a:hover{
+a:hover {
     color: #444;
 }
 
-.navflx{
+.navflx {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -150,22 +157,22 @@ a:hover{
     align-items: center;
 }
 
-.logoDiv{
+.logoDiv {
     width: 10%;
 }
 
-.liste{
+.liste {
     width: 35%;
 }
 
-.olflx{
+.olflx {
     padding-left: 40px;
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
-.flxend{
+.flxend {
     width: 55%;
     display: flex;
     flex-direction: row;
@@ -174,7 +181,7 @@ a:hover{
     align-items: center;
 }
 
-.bigflx{
+.bigflx {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -182,7 +189,7 @@ a:hover{
     justify-content: flex-end;
 }
 
-#regbut{
+#regbut {
     color: #444;
     border: 1px solid #333;
     border-radius: 15px;
@@ -194,26 +201,26 @@ a:hover{
     transition: all 200ms ease-in-out;
 }
 
-#regbut:hover{
+#regbut:hover {
     color: white;
     background-color: black;
     transform: scale(1.1);
 }
 
-.imdest{
+.imdest {
     margin-top: 40px;
     width: 58%;
     height: auto;
 }
 
-.rdiv{
+.rdiv {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 75vh;
 }
 
-.ldiv{
+.ldiv {
     display: flex;
     flex-direction: column;
     padding-top: 80px;
@@ -222,7 +229,7 @@ a:hover{
     height: 75vh;
 }
 
-.ldiv button{
+.ldiv button {
     width: 180px;
     border-radius: 24px;
     padding: 18px 20px;
@@ -234,19 +241,19 @@ a:hover{
     transition: all 200ms ease-in-out;
 }
 
-.ldiv button:hover{
+.ldiv button:hover {
     transform: scale(1.1);
     background-color: white;
     color: black;
 }
 
-.grip{
+.grip {
     color: #555;
     font-size: 24px;
     line-height: 32px;
 }
 
-h2{
+h2 {
     margin-top: 30px;
     font-size: 112px;
     font-weight: 500;
@@ -255,7 +262,7 @@ h2{
     font-family: 'Work Sans', sans-serif;
 }
 
-.imflx{
+.imflx {
     display: flex;
     justify-content: flex-start;
     gap: 50px;
@@ -263,15 +270,16 @@ h2{
     padding-top: 44px;
 }
 
-.imflx img{
+.imflx img {
     height: 34px;
 }
 
-#altmenu{
+#altmenu {
     position: absolute;
     background: white;
     /*border: 1px solid rgb(221, 221, 221);*/
-    padding: 0 18px; /* 8 18*/
+    padding: 0 18px;
+    /* 8 18*/
     margin-top: 6px;
     margin-left: -68px;
     width: 120px;
@@ -283,14 +291,14 @@ h2{
     transition: all 240ms ease-in-out;
 }
 
-#altmenu.ac{
+#altmenu.ac {
     max-height: 600px;
     border: 1px solid rgb(221, 221, 221);
     box-shadow: 2px 2px 2px 2px rgba(221, 221, 221, 0.37);
-    
+
 }
 
-#altmenu ol li{
+#altmenu ol li {
     margin: 14px 0;
     font-size: 18px;
     font-weight: 500;
@@ -301,27 +309,28 @@ h2{
     gap: 16px;
 }
 
-#men1k{
+#men1k {
     display: inline;
 }
 
-#men1k.acildi{
+#men1k.acildi {
     display: none;
 }
 
-#men1a{
+#men1a {
     display: none;
 }
 
-#men1a.acildi{
+#men1a.acildi {
     display: inline;
 }
 
-#altmenu2{
+#altmenu2 {
     position: absolute;
     background: white;
     /* border: 1px solid rgb(221, 221, 221); */
-    padding: 0 18px; /* 8 18*/
+    padding: 0 18px;
+    /* 8 18*/
     margin-top: 6px;
     margin-left: -8px;
     width: 80px;
@@ -333,13 +342,13 @@ h2{
     transition: all 220ms ease-in-out;
 }
 
-#altmenu2.ac{
+#altmenu2.ac {
     max-height: 600px;
     border: 1px solid rgb(221, 221, 221);
     box-shadow: 2px 2px 2px 2px rgba(221, 221, 221, 0.37);
 }
 
-#altmenu2 ol li{
+#altmenu2 ol li {
     margin: 14px 0;
     font-size: 18px;
     font-weight: 500;
@@ -350,62 +359,64 @@ h2{
     gap: 16px;
 }
 
-#men2k{
+#men2k {
     display: inline;
 }
 
-#men2k.acildi{
+#men2k.acildi {
     display: none;
 }
 
-#men2a{
+#men2a {
     display: none;
 }
 
-#men2a.acildi{
+#men2a.acildi {
     display: inline;
 }
 
-.immob{
+.immob {
     display: none;
 }
 
-#menubut{
+#menubut {
     display: none;
 }
 
-#yanav{
+#yanav {
     display: none;
 }
 
 @media only screen and (max-width: 1500px) {
-    .imdest{
+    .imdest {
         margin-top: 40px;
         width: 80%;
         height: auto;
-    }    
-    .liste{
+    }
+
+    .liste {
         width: 55%;
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    .imdest{
+    .imdest {
         margin-top: 40px;
         width: 100%;
         height: auto;
     }
-    .liste{
+
+    .liste {
         width: 75%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    #kara{
+    #kara {
         display: none;
     }
 
-    #kara.karart{
+    #kara.karart {
         display: block;
         position: fixed;
         top: 0;
@@ -417,7 +428,7 @@ h2{
         z-index: 100;
     }
 
-    #menubut{
+    #menubut {
         display: block;
         position: absolute;
         right: 20px;
@@ -427,24 +438,24 @@ h2{
         transition: all 200ms ease-in-out;
         z-index: 1000;
     }
-    
-    #ic-close-menu{
-        display: none;
-    }
-    
-    #ic-close-menu.acil{
-        display: block;
-    }
-    
-    #ic-menu{
-        display: block;
-    }
-    
-    #ic-menu.acil{
+
+    #ic-close-menu {
         display: none;
     }
 
-    #yanav{
+    #ic-close-menu.acil {
+        display: block;
+    }
+
+    #ic-menu {
+        display: block;
+    }
+
+    #ic-menu.acil {
+        display: none;
+    }
+
+    #yanav {
         display: block;
         position: fixed;
         top: 0;
@@ -457,11 +468,11 @@ h2{
         overflow: hidden;
     }
 
-    #yanav.ac{
+    #yanav.ac {
         width: 340px;
     }
 
-    .menpad{
+    .menpad {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -469,57 +480,65 @@ h2{
         padding-top: 100px;
     }
 
-    .listflx{
+    .listflx {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 26px;
     }
 
-    .listflx li ol li{
+    .listflx li ol li {
         font-size: 18px;
         font-weight: 400;
         color: #555;
         margin: 10px 0;
     }
 
-    .bigflx{
+    .bigflx {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
         margin-top: 100px;
         justify-content: center;
         align-items: center;
-    } 
-    .liste{
+    }
+
+    .liste {
         display: none;
     }
-    .flxend{
+
+    .flxend {
         display: none;
     }
-    .imdest{
+
+    .imdest {
         display: none;
     }
-    .immob{
+
+    .immob {
         display: block;
         height: 40%;
         width: auto;
     }
-    .rdiv{
+
+    .rdiv {
         display: block;
         height: 50%;
     }
-    .imflx{
+
+    .imflx {
         padding-top: 10px;
     }
-    .logoDiv img{
+
+    .logoDiv img {
         width: 150px;
     }
-    .navflx{
-        position: absolute;
-    } 
 
-    .flxend2{
+    .navflx {
+        position: absolute;
+    }
+
+    .flxend2 {
         margin-top: 80px;
         display: flex;
         flex-direction: column;
@@ -528,7 +547,7 @@ h2{
         align-items: center;
     }
 
-    .logbut{
+    .logbut {
         color: #444;
         border: 1px solid #333;
         border-radius: 15px;
@@ -540,7 +559,7 @@ h2{
         transition: all 200ms ease-in-out;
     }
 
-    .logbut:hover{
+    .logbut:hover {
         color: white;
         background-color: black;
         transform: scale(1.1);
@@ -548,125 +567,125 @@ h2{
 }
 
 @media only screen and (max-width: 850px) {
-    .logoDiv img{
+    .logoDiv img {
         width: 120px;
         margin-left: 25px;
     }
 
-    .imdest{
+    .imdest {
         display: none;
     }
 
-    .immob{
+    .immob {
         display: block;
         width: 80%;
         margin: auto;
     }
 
-    .ldiv{
+    .ldiv {
         padding-top: 20px;
         align-items: center;
         gap: 20px;
         height: auto;
     }
-    
-    .ldiv button{
+
+    .ldiv button {
         padding: 12px 16px;
     }
 
-    h2{
+    h2 {
         margin-top: 26px;
         font-size: 75px;
     }
 
-    .imflx{
+    .imflx {
         gap: 20px;
         padding-bottom: 40px;
         padding-top: 20px;
     }
-    
-    .imflx img{
+
+    .imflx img {
         height: 30px;
     }
 }
 
 @media only screen and (max-width: 555px) {
 
-    .immob{
+    .immob {
         display: block;
         width: 85%;
         margin: auto;
     }
 
-    .ldiv{
+    .ldiv {
         padding-top: 20px;
         align-items: center;
         gap: 20px;
         height: auto;
     }
-    
-    .ldiv button{
+
+    .ldiv button {
         padding: 12px 14px;
     }
 
-    h2{
+    h2 {
         margin-top: 18px;
         font-size: 65px;
     }
 
-    .imflx{
+    .imflx {
         gap: 18px;
         padding-bottom: 30px;
         padding-top: 15px;
     }
-    
-    .imflx img{
+
+    .imflx img {
         height: 26px;
     }
 
-    #yanav.ac{
+    #yanav.ac {
         width: 202px;
     }
 }
 
 @media only screen and (max-width: 475px) {
-    .logoDiv img{
+    .logoDiv img {
         margin-left: 10px;
     }
 
-    .immob{
+    .immob {
         display: block;
         width: 85%;
         margin: auto;
     }
 
-    .ldiv{
+    .ldiv {
         padding-top: 20px;
         align-items: center;
         gap: 20px;
         height: auto;
     }
-    
-    .ldiv button{
+
+    .ldiv button {
         padding: 12px 14px;
     }
 
-    h2{
+    h2 {
         margin-top: 16px;
         font-size: 64px;
     }
 
-    .imflx{
+    .imflx {
         gap: 12px;
         padding-bottom: 5px;
         padding-top: 15px;
     }
-    
-    .imflx img{
+
+    .imflx img {
         height: 24px;
     }
 
-    .grip{
+    .grip {
         font-size: 20px;
         line-height: 30px;
     }
@@ -674,60 +693,60 @@ h2{
 
 @media only screen and (max-width: 475px) {
 
-    .logoDiv img{
+    .logoDiv img {
         width: 100px;
     }
 
-    .immob{
+    .immob {
         display: block;
         width: 85%;
         margin: auto;
     }
 
-    .ldiv{
+    .ldiv {
         padding-top: 20px;
         align-items: center;
         gap: 20px;
         height: auto;
     }
-    
-    .ldiv button{
+
+    .ldiv button {
         padding: 12px 14px;
     }
 
-    h2{
+    h2 {
         margin-top: 16px;
         font-size: 56px;
     }
 
-    .imflx{
+    .imflx {
         gap: 10px;
         padding-bottom: 5px;
         padding-top: 15px;
     }
-    
-    .imflx img{
+
+    .imflx img {
         height: 22px;
     }
 }
 
 @media only screen and (max-width: 375px) {
 
-    .logoDiv img{
+    .logoDiv img {
         width: 80px;
         margin-left: 5px;
     }
-    
-    .imflx img{
+
+    .imflx img {
         height: 18px;
     }
 
-    h2{
+    h2 {
         margin-top: 12px;
         font-size: 46px;
     }
 
-    .grip{
+    .grip {
         font-size: 16px;
         font-weight: 500;
         line-height: 30px;
